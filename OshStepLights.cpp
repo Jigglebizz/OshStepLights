@@ -50,6 +50,7 @@ void OshStepLights::setStepRed( uint8_t step, uint8_t value) {
 
 void OshStepLights::clearStepRed() {
     step_red = 0xFFFF;
+    update();
 }
 
 void OshStepLights::setStepGreen( uint8_t step, uint8_t value) {
@@ -62,6 +63,7 @@ void OshStepLights::setStepGreen( uint8_t step, uint8_t value) {
 
 void OshStepLights::clearStepGreen() {
     step_green = 0xFFFF;
+    update();
 }
 
 void OshStepLights::setFunctionRed( uint8_t func, uint8_t value) {
@@ -75,6 +77,7 @@ void OshStepLights::setFunctionRed( uint8_t func, uint8_t value) {
 
 void OshStepLights::clearFunctionRed() {
     func_red = 0xFF;
+    update();
 }
 
 void OshStepLights::setFunctionGreen( uint8_t func, uint8_t value) {
@@ -88,4 +91,5 @@ void OshStepLights::setFunctionGreen( uint8_t func, uint8_t value) {
 
 void OshStepLights::clearFunctionGreen() {
     func_green = 0xFF;
+    update();
 }
